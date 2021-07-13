@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+
+<h1>Polls List</h1>
+
+{% for poll in polls %}
+    <a href="{% url 'poll' id=poll.id %}">{{ poll }}</a><br>
+{% endfor %}

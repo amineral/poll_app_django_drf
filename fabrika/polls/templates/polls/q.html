@@ -1,0 +1,7 @@
+
+<h2>{{ question.title }}</h2>
+<form action="/polls_list/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>

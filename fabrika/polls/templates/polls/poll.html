@@ -1,0 +1,5 @@
+{% for q in questions %}
+    <p>
+    <a href="{% url 'question' id=q.id %}"> {{ q.title }}  </a>
+    </p>
+{% endfor %}
